@@ -9,13 +9,18 @@ The AWS development services allow you design a CI/CD process to deploy a static
 - AWS CLI
 - AWS credentials
 
+**Solution**
+
+![diagram](diagrams_image.png)
+
+
 **Installation**
 1. Clone this respository and go to the root folder.
 2. Execute the following command to download all dependencies.
 ```sh
 cdktf get
 ```
-3. Open the main.ts file and fill out the following fields.
+1. Open the main.ts file and fill out the following fields.
 ```javascript
     const bucketName = "<Put the name of the S3 bucket where the static website is"
 
@@ -26,12 +31,12 @@ cdktf get
         ["owner", "<Owner where the GitHub repository is>"]
     ]);
 ```
-4. Execute the following command to deploy and deploy the services.
+1. Execute the following command to deploy and deploy the services.
 ```sh
 cdktf deploy --auto-approve
 ```
-5. Once it's done, go to the AWS console and check the status of the Codepipeline and CodeBuild project.
-6. After the pipeline is complete, go to the static website and validate the deployment.
+1. Once it's done, go to the AWS console and check the status of the Codepipeline and CodeBuild project.
+2. After the pipeline is complete, go to the static website and validate the deployment.
 
 **Clean Up**
 
