@@ -9,12 +9,12 @@ The AWS development services allow you design a CI/CD process to deploy a static
 - AWS CLI
 - AWS credentials
 
-**Solution**
+## Solution Diagram
 
 ![diagram](diagrams_image.png)
 
 
-**Installation**
+## Installation
 1. Clone this respository and go to the root folder.
 2. Execute the following command to download all dependencies.
 ```sh
@@ -38,7 +38,7 @@ cdktf deploy --auto-approve
 1. Once it's done, go to the AWS console and check the status of the Codepipeline and CodeBuild project.
 2. After the pipeline is complete, go to the static website and validate the deployment.
 
-**Clean Up**
+## Clean Up
 
 To remove the resources deployed in the above steps execute the following steps:
 
